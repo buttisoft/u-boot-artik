@@ -429,7 +429,7 @@
 	"rootfs_type=ext4\0"						\
 	"lcd1_0=s6e8fa0\0"						\
 	"lcd2_0=gst7d0038\0"						\
-	"lcd_panel=s6e8fa0\0"						\
+	"lcd_panel=gst7d0038\0"						\
 	"sdrecovery=run boot_cmd_sdboot;"				\
 		"sd_recovery mmc 1:3 $sdrecaddr partmap_emmc.txt\0"	\
 	"factory_load=factory_info load mmc 0 "				\
