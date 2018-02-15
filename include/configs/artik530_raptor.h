@@ -425,7 +425,7 @@
 	"root_rw=rw\0"							\
 	"model_id=530\0"							\
 	"nr_cpus=4\0"							\
-	"opts=loglevel=4 quiet logo.nologo console=tty0\0"						\
+	"opts=loglevel=4 quiet logo.nologo console=tty0 systemd.show_status=false\0"						\
 	"rootfs_type=ext4\0"						\
 	"lcd1_0=s6e8fa0\0"						\
 	"lcd2_0=gst7d0038\0"						\
