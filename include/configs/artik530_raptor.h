@@ -441,11 +441,11 @@
 	"factory_set_ethaddr=run factory_load; gen_eth_addr ;"		\
 		"factory_info write ethaddr $ethaddr;"			\
 		"run factory_save\0"					\
-	"load_args=run factory_load; setenv bootargs ${console} "	\
+	"load_args=run factory_load; setenv bootargs \"${console} "	\
 		"root=/dev/mmcblk${rootdev}p${rootpart} ${root_rw} "	\
 		"rootfstype=${rootfs_type} ${recoverymode} ${ota} "	\
 		"drm_panel=gst7d0038 nr_cpus=${nr_cpus} ${opts} "	\
-		"bootfrom=${bootpart} rescue=${rescue};\0"		\
+		"bootfrom=${bootpart} rescue=${rescue};\"\0"		\
 	"load_kernel="							\
 		"ret=0; "						\
 		"ext4load mmc ${rootdev}:${bootpart} $kerneladdr $kernel_file && setexpr ret 1; " \
